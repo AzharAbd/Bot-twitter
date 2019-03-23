@@ -10,7 +10,7 @@ def scrape(url):
     #source_code = requests.get(url) #get the source code
     source_code = driver.execute_script("return document.documentElement.outerHTML")
     driver.quit()
-
+	#testing github
     soup = BeautifulSoup(source_code, 'html.parser')
 
     box = soup.find('div',{'class' : 'upcoming challenge-list'})
